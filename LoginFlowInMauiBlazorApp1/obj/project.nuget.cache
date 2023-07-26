@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BwLOtRCu+z+xoO09HpOsRF7qEv5P6/rsRNEnURwPVLUQIr6w/980UdA/hxRyuxDya0m8DiJooHHDrTUxLaMxUw==",
+  "dgSpecHash": "CD5IP+3fq4Iw+SU1KCcvwD16fjpEjh5u/DuIco8PKzY6ZHB1IwX/+VMAzbzkLQ6mkWo4SLt/0qndzjmFA+4OXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
+  "projectFilePath": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iuri.passos\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
@@ -161,8 +161,8 @@
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maui.core.ref.ios\\6.0.553\\microsoft.maui.core.ref.ios.6.0.553.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.ios.ref\\16.4.60\\microsoft.ios.ref.16.4.60.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maui.controls.ref.ios\\6.0.553\\microsoft.maui.controls.ref.ios.6.0.553.nupkg.sha512",
+    "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.ios.runtime.ios-arm64\\16.4.60\\microsoft.ios.runtime.ios-arm64.16.4.60.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maui.essentials.runtime.ios\\6.0.553\\microsoft.maui.essentials.runtime.ios.6.0.553.nupkg.sha512",
-    "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64\\16.4.60\\microsoft.ios.runtime.iossimulator-x64.16.4.60.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maui.core.runtime.ios\\6.0.553\\microsoft.maui.core.runtime.ios.6.0.553.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maui.controls.ref.maccatalyst\\6.0.553\\microsoft.maui.controls.ref.maccatalyst.6.0.553.nupkg.sha512",
     "C:\\Users\\iuri.passos\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64\\16.4.60\\microsoft.maccatalyst.runtime.maccatalyst-x64.16.4.60.nupkg.sha512",

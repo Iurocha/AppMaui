@@ -4,13 +4,7 @@
 @using System.IdentityModel.Tokens.Jwt;
 @inject NavigationManager NavManager;
 
-
 <div class="appHeader no-border transparent">
-    <div class="left">
-        <a href="#" class="headerButton goBack">
-            <ion-icon name="chevron-back-outline"></ion-icon>
-        </a>
-    </div>
     <div class="pageTitle">Welcome</div>
     <div class="right">
     </div>
@@ -46,10 +40,14 @@
     <div class="carousel-button-footer">
         <div class="row">
             <div class="col-6">
-                <a href="app-components.html" class="btn btn-outline-secondary btn-lg btn-block">Register</a>
+                <NavLink class="nav-link" href="/Registration">
+                    <a class="btn btn-outline-secondary btn-lg btn-block">Registre-se</a>
+                </NavLink>
             </div>
             <div class="col-6">
-                <a href="app-components.html" class="btn btn-primary btn-lg btn-block">Login</a>
+                <NavLink class="nav-link" href="/Login">
+                    <a class="btn btn-primary btn-lg btn-block">Login</a>
+                </NavLink>
             </div>
         </div>
     </div>

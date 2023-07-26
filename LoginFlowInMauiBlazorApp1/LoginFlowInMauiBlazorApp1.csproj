@@ -35,6 +35,21 @@
         <GenerateTestArtifacts>True</GenerateTestArtifacts>
         <AppInstallerUri>C:\DEV\apk</AppInstallerUri>
         <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+        <AndroidSigningKeyStore>key.keystore</AndroidSigningKeyStore>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+      <AndroidKeyStore>True</AndroidKeyStore>
+      <AndroidSigningStorePass>Esqueci@123</AndroidSigningStorePass>
+      <AndroidSigningKeyAlias>MauitestAlias</AndroidSigningKeyAlias>
+      <AndroidSigningKeyPass>Esqueci@123</AndroidSigningKeyPass>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
+      <AndroidKeyStore>True</AndroidKeyStore>
+      <AndroidSigningStorePass>Esqueci@123</AndroidSigningStorePass>
+      <AndroidSigningKeyAlias>MauitestAlias</AndroidSigningKeyAlias>
+      <AndroidSigningKeyPass>Esqueci@123</AndroidSigningKeyPass>
     </PropertyGroup>
 
     <ItemGroup>

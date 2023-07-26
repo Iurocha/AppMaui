@@ -1,63 +1,283 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\obj\\Debug\\net6.0-android\\scopedcss\\bundle\\LoginFlowInMauiBlazorApp1.styles.css",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\obj\\Debug\\net6.0-android\\scopedcss\\bundle\\LoginFlowInMauiBlazorApp1.styles.css",
       "PackagePath": "staticwebassets\\LoginFlowInMauiBlazorApp1.styles.css"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\app.css",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\css\\src\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\src\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\css\\src\\splide\\splide.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\src\\splide\\splide.min.css"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\img\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\128x128.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\128x128.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\144x144.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\144x144.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\152x152.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\152x152.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\192x192.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\192x192.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\384x384.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\384x384.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\512x512.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\512x512.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\72x72.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\72x72.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\icon\\96x96.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\96x96.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\loading-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\loading-icon.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar1.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar10.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar2.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar3.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar4.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar5.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar6.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar7.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar8.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\avatar\\avatar9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\avatar\\avatar9.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\brand\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\brand\\1.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\brand\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\brand\\2.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\brand\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\brand\\3.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\brand\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\brand\\4.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\brand\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\brand\\5.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\.DS_Store",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\.DS_Store"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\1.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\2.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\3.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\4.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\5.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\6.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\vector1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\vector1.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\vector2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\vector2.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\vector3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\vector3.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide1.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide2.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide3.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide4.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide5.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\photo\\wide6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\photo\\wide6.jpg"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\img\\sample\\qr.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sample\\qr.png"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\js\\base.js",
+      "PackagePath": "staticwebassets\\assets\\js\\base.js"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\js\\lib\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lib\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\js\\plugins\\apexcharts\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\apexcharts\\apexcharts.min.js"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\assets\\js\\plugins\\splide\\splide.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\splide\\splide.min.js"
+    },
+    {
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\favicon.ico",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\wwwroot\\index.html",
+      "Id": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

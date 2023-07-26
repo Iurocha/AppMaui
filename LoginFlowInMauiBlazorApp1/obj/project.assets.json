@@ -12108,7 +12108,7 @@
         }
       }
     },
-    "net6.0-android31.0/iossimulator-x64": {
+    "net6.0-android31.0/ios-arm64": {
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -23253,7 +23253,7 @@
         }
       }
     },
-    "net6.0-ios16.1/iossimulator-x64": {
+    "net6.0-ios16.1/ios-arm64": {
       "Microsoft.AspNetCore.Authorization/6.0.8": {
         "type": "package",
         "dependencies": {
@@ -29486,7 +29486,7 @@
         }
       }
     },
-    "net6.0-maccatalyst16.1/iossimulator-x64": {
+    "net6.0-maccatalyst16.1/ios-arm64": {
       "Microsoft.AspNetCore.Authorization/6.0.8": {
         "type": "package",
         "dependencies": {
@@ -36232,7 +36232,7 @@
         }
       }
     },
-    "net6.0-windows10.0.19041/iossimulator-x64": {
+    "net6.0-windows10.0.19041/ios-arm64": {
       "Microsoft.AspNetCore.Authorization/6.0.8": {
         "type": "package",
         "dependencies": {
@@ -42989,11 +42989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
+      "projectUniqueName": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
       "projectName": "LoginFlowInMauiBlazorApp1",
-      "projectPath": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
+      "projectPath": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1.csproj",
       "packagesPath": "C:\\Users\\iuri.passos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iuri.passos\\source\\repos\\LoginFlowInMauiBlazorApp1\\LoginFlowInMauiBlazorApp1\\obj\\",
+      "outputPath": "C:\\DEV\\AppMaui\\AppMaui\\LoginFlowInMauiBlazorApp1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -43205,7 +43205,7 @@
             "version": "[16.4.60, 16.4.60]"
           },
           {
-            "name": "Microsoft.iOS.Runtime.iossimulator-x64",
+            "name": "Microsoft.iOS.Runtime.ios-arm64",
             "version": "[16.4.60, 16.4.60]"
           },
           {
@@ -43462,7 +43462,7 @@
       "android-x86": {
         "#import": []
       },
-      "iossimulator-x64": {
+      "ios-arm64": {
         "#import": []
       },
       "maccatalyst-x64": {
