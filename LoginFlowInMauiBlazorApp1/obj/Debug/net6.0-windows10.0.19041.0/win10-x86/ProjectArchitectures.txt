@@ -1,0 +1,1 @@
+C:\Users\iuri.passos\source\repos\LoginFlowInMauiBlazorApp1\LoginFlowInMauiBlazorApp1\LoginFlowInMauiBlazorApp1.csproj;x86

@@ -1,0 +1,76 @@
+﻿@using LoginFlowInMauiBlazorApp1.Models;
+@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavManager;
+
+
+<div class="page">
+    @if (Settings.UserBasicDetail != null)
+    {
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+        <main>
+            <div class="top-row px-4">
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            </div>
+
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    }
+    else
+    {
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    }
+</div>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("eval", "loadSplide()");
+
+            StateHasChanged();
+
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        NavManager.LocationChanged += HandlerLocationChanged;
+    }
+
+    private void HandlerLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        LoadSplide();
+        RemoveModalBackDrop();
+    }
+
+    private async void RemoveModalBackDrop()
+    {
+        string script = @"
+var elements = document.getElementsByClassName('modal-backdrop');
+
+
+
+Array.from(elements).forEach(function(element) {
+  element.remove();
+});";
+
+        // removes the grey overlay.
+        await JSRuntime.InvokeVoidAsync("eval", script);
+    }
+    private async void LoadSplide()
+    {
+        await JSRuntime.InvokeVoidAsync("eval", "loadSplide();");
+    }
+
+}

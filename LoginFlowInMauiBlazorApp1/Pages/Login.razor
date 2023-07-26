@@ -1,0 +1,146 @@
+﻿@page "/login"
+@using LoginFlowInMauiBlazorApp1.Models;
+@using LoginFlowInMauiBlazorApp1.Services;
+@using System.IdentityModel.Tokens.Jwt;
+@using System.Security.Claims;
+@using Newtonsoft.Json;
+@inject IAppService AppService;
+@inject NavigationManager NavManager;
+@*
+<EditForm Model="@loginModel" OnValidSubmit="Submit">
+    <DataAnnotationsValidator />*@
+@*    <div class="form-group">
+    <label>Email address</label>
+    <input @bind-value="loginModel.UserName" class="form-control" placeholder="Digite o email" />
+    <ValidationMessage For="@(()=> loginModel.UserName)" />
+    </div>*@
+@* <div class="mt-2 form-group">
+    <label>Password</label>
+    <input type="password" @bind-value="loginModel.Password" class="form-control" placeholder="Digite a senha" />
+    <ValidationMessage For="@(()=> loginModel.Password)" />
+    </div>*@
+@*    <div class="mt-2 text-end">
+    <NavLink class="nav-link" href="registration">
+    <span>Não possui conta? Registre-se</span>
+    </NavLink>
+    </div>*@
+@* <div class="text-center mt-2">
+    <button class="btn btn-primary" type="submit">
+    <span class="@_spinnerClass" role="status" aria-hidden="true"></span>
+    SignIn
+    </button>
+    </div>*@
+@*</EditForm>*@
+
+    <!-- App Header -->
+    <div class="appHeader no-border transparent position-absolute">
+        <div class="left">
+            <NavLink class="nav-link" href="Presentation">
+                <a class="headerButton goBack">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </a>
+            </NavLink>
+        </div>
+        <div class="pageTitle"></div>
+    </div>
+    <!-- * App Header -->
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2 text-center">
+            <h1>Log in</h1>
+            <h4>Fill the form to log in</h4>
+        </div>
+        <div class="section mb-5 p-2">
+            <EditForm Model="@loginModel" OnValidSubmit="Submit">
+                <DataAnnotationsValidator />
+                <div class="card">
+                    <div class="card-body pb-1">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">E-mail</label>
+                                <input @bind-value="loginModel.UserName" class="form-control" id="email1" placeholder="Your e-mail">
+                                <ValidationMessage For="@(()=> loginModel.UserName)" />
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="password1">Password</label>
+                                <input type="password" @bind-value="loginModel.Password" class="form-control" id="password1" autocomplete="off"
+                                       placeholder="Your password">
+                                <ValidationMessage For="@(()=> loginModel.Password)" />
+
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-links mt-2">
+                    <div>
+                        <NavLink class="nav-link" href="registration">
+                            <span>Não possui conta? Registre-se</span>
+                        </NavLink>
+                        @*<a href="app-register.html">Register Now</a>*@
+                    </div>
+                    <div><a href="app-forgot-password.html" class="text-muted">Forgot Password?</a></div>
+                </div>
+
+                <div class="form-button-group  transparent">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <span class="@_spinnerClass" role="status" aria-hidden="true"></span>
+                        Log in
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+@code {
+    LoginModel loginModel = new();
+
+    private string _spinnerClass = "";
+
+    private async void Submit()
+    {
+        _spinnerClass = "spinner-border spinner-border-sm";
+        var response = await AppService.AuthenticateUser(loginModel);
+
+        if (response.Token != null)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jsontoken = handler.ReadToken(response.Token) as JwtSecurityToken;
+
+            string userId = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.NameId).Value;
+            string name = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.UniqueName).Value;
+            string email = loginModel.UserName;
+
+            var userBasicDetail = new UserBasicDetail
+                {
+                    Email = email,
+                    Name = name,
+                    Token = response.Token,
+                    UserId = userId,
+                };
+
+            string userBasicInfoStr = JsonConvert.SerializeObject(userBasicDetail);
+
+            await SecureStorage.SetAsync(nameof(Settings.UserBasicDetail), userBasicInfoStr);
+            Settings.UserBasicDetail = userBasicDetail;
+
+            NavManager.NavigateTo("/");
+
+        }
+        else
+        {
+            await App.Current.MainPage.DisplayAlert("Oops", "Nome de usuário ou senha estão incorretos", "Ok");
+        }
+        _spinnerClass = "";
+    }
+}
