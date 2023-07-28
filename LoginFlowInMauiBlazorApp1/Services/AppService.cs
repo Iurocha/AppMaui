@@ -7,8 +7,8 @@ namespace LoginFlowInMauiBlazorApp1.Services
 {
     public class AppService : IAppService
     {
-        //private string _baseUrl = "https://localhost:7107";
-        private string _baseUrl = "https://g6hr0mv2-7107.brs.devtunnels.ms";
+        private string _baseUrl = "https://localhost:7107";
+        //private string _baseUrl = "https://g6hr0mv2-7107.brs.devtunnels.ms";
         public async Task<AuthenticateResult> AuthenticateUser(LoginModel loginModel)
         {
             var returnStr = new AuthenticateResult();

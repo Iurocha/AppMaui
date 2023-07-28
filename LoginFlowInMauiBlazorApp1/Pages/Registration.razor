@@ -2,8 +2,7 @@
 @using LoginFlowInMauiBlazorApp1.Models;
 @using LoginFlowInMauiBlazorApp1.Services;
 @inject IAppService AppService;
-
-
+@inject NavigationManager NavManager;
    
     <!-- App Header -->
     <div class="appHeader no-border transparent position-absolute">
@@ -55,13 +54,13 @@
                             <div class="d-flex flex-row">
                                 <div class="col-4 d-flex justify-content-between">
                                     <div class="form-check">
-                                        <input @onchange="@(()=> registrationModel.Gender="Homem")" class="form-check-input" type="radio" name="flexRadioDefault" />
+                                        <input @onchange="@(()=> registrationModel.Gender="M")" class="form-check-input" type="radio" name="flexRadioDefault"  id="flexRadioDefault1" />
                                         <label class="form-check-label" for="flexRadioDefault1">
                                             Homem
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input @onchange="@(()=> registrationModel.Gender="Mulher")" class="form-check-input" type="radio" name="flexRadioDefault" />
+                                    <input @onchange="@(()=> registrationModel.Gender="F")" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                                         <label class="form-check-label" for="flexRadioDefault2">
                                             Mulher
                                         </label>
@@ -191,6 +190,9 @@
             await App.Current.MainPage.DisplayAlert("Oops", response.ErrorMessage, "Ok");
         }
         _spinnerClass = "";
+        this.StateHasChanged();
+        NavManager.NavigateTo("/Login");
+
     }
 
     private void SetGender(string gender)

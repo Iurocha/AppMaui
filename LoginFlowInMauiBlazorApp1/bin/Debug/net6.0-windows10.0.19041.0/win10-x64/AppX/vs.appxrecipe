@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-07-26T19:37:44.316</Modified>
+      <Modified>2023-07-28T21:20:07.407</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-07-26T19:37:43.765</Modified>
+      <Modified>2023-07-28T21:20:06.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\LoginFlowInMauiBlazorApp1.runtimeconfig.json">
       <PackagePath>LoginFlowInMauiBlazorApp1.runtimeconfig.json</PackagePath>
-      <Modified>2023-07-26T19:37:43.198</Modified>
+      <Modified>2023-07-28T21:07:51.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\LoginFlowInMauiBlazorApp1.dll">
       <PackagePath>LoginFlowInMauiBlazorApp1.dll</PackagePath>
-      <Modified>2023-07-26T19:37:40.423</Modified>
+      <Modified>2023-07-28T21:20:03.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>LoginFlowInMauiBlazorApp1.exe</PackagePath>
-      <Modified>2023-07-26T19:37:40.510</Modified>
+      <Modified>2023-07-28T21:20:03.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\DEV\AppMaui\AppMaui\LoginFlowInMauiBlazorApp1\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\LoginFlowInMauiBlazorApp1.deps.json">
       <PackagePath>LoginFlowInMauiBlazorApp1.deps.json</PackagePath>
-      <Modified>2023-07-26T19:37:43.035</Modified>
+      <Modified>2023-07-28T21:20:06.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\iuri.passos\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.20\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
