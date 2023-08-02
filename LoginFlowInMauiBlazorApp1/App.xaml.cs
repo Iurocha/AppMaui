@@ -5,7 +5,8 @@ public partial class App : Application
 	public App()
 	{
 		InitializeComponent();
+        Preferences.Set("FinappDarkmode", "1");
 
-		MainPage = new MainPage();
+        MainPage = new MainPage();
 	}
 }

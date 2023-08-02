@@ -1,4 +1,7 @@
-﻿<!-- App Sidebar -->
+﻿@using LoginFlowInMauiBlazorApp1.Models;
+@inject NavigationManager NavManager;
+
+<!-- App Sidebar -->
 <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -116,7 +119,9 @@
                                 <ion-icon name="settings-outline"></ion-icon>
                             </div>
                             <div class="in">
-                                Settings
+                                <NavLink class="nav-link" href="App-Settings">
+                                    Settings
+                                </NavLink>
                             </div>
                         </a>
                     </li>
@@ -136,49 +141,24 @@
                                 <ion-icon name="log-out-outline"></ion-icon>
                             </div>
                             <div class="in">
-                                Log out
+                                <NavLink class="nav-link" href="#" @onclick="logout">
+                                    Log out
+                                </NavLink>
                             </div>
                         </a>
                     </li>
-
-
                 </ul>
                 <!-- * others -->
-                <!-- send money -->
-                <div class="listview-title mt-1">Send Money</div>
-                <ul class="listview image-listview flush transparent no-line">
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Artem Sazonov</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar4.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Sophie Asveld</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Kobus van de Vegte</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- * send money -->
-
             </div>
         </div>
     </div>
 </div>
 <!-- * App Sidebar -->
 @code {
-
+    private void logout()
+    {
+        SecureStorage.RemoveAll();
+        Settings.UserBasicDetail = null;
+        NavManager.NavigateTo("/");
+    }
 }

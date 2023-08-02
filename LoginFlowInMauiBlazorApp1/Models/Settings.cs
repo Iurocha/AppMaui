@@ -10,5 +10,10 @@ namespace LoginFlowInMauiBlazorApp1.Models
     {
         public static UserBasicDetail UserBasicDetail { get; set; }
 
+        public class CustomizeAppSettings
+        {
+            public bool IsDarkMode { get; set; }
+        }
+
     }
 }

@@ -110,39 +110,42 @@
     private async void Submit()
     {
         _spinnerClass = "spinner-border spinner-border-sm";
-        await Task.Delay(500);
+        //await Task.Delay(500);
+
+        var response = await AppService.AuthenticateUser(loginModel);
+
+        if (response.Token != null)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jsontoken = handler.ReadToken(response.Token) as JwtSecurityToken;
+
+            string userId = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.NameId).Value;
+            string name = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.UniqueName).Value;
+            string email = loginModel.UserName;
+
+            var userBasicDetail = new UserBasicDetail
+                {
+                    Email = email,
+                    Name = name,
+                    Token = response.Token,
+                    UserId = userId,
+                };
+
+            string userBasicInfoStr = JsonConvert.SerializeObject(userBasicDetail);
+
+            await SecureStorage.SetAsync(nameof(Settings.UserBasicDetail), userBasicInfoStr);
+
+            
+
+            Settings.UserBasicDetail = userBasicDetail;
+        }
+        else
+        {
+            await App.Current.MainPage.DisplayAlert("Oops", "Nome de usuário ou senha estão incorretos", "Ok");
+        }
+
         _spinnerClass = "";
         NavManager.NavigateTo("/Home");
 
-        //var response = await AppService.AuthenticateUser(loginModel);
-
-        //if (response.Token != null)
-        //{
-        //    var handler = new JwtSecurityTokenHandler();
-        //    var jsontoken = handler.ReadToken(response.Token) as JwtSecurityToken;
-
-        //    string userId = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.NameId).Value;
-        //    string name = jsontoken.Claims.FirstOrDefault(f => f.Type == JwtRegisteredClaimNames.UniqueName).Value;
-        //    string email = loginModel.UserName;
-
-        //    var userBasicDetail = new UserBasicDetail
-        //        {
-        //            Email = email,
-        //            Name = name,
-        //            Token = response.Token,
-        //            UserId = userId,
-        //        };
-
-        //    string userBasicInfoStr = JsonConvert.SerializeObject(userBasicDetail);
-
-        //    await SecureStorage.SetAsync(nameof(Settings.UserBasicDetail), userBasicInfoStr);
-        //    Settings.UserBasicDetail = userBasicDetail;
-
-
-        //}
-        //else
-        //{
-        //    await App.Current.MainPage.DisplayAlert("Oops", "Nome de usuário ou senha estão incorretos", "Ok");
-        //}
     }
 }

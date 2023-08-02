@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using System.Net.Http.Json;
 using System.Text;
 
-namespace LoginFlowInMauiBlazorApp1.Services
+namespace LoginFlowInMauiBlazorApp1.Services 
 {
     public class AppService : IAppService
     {

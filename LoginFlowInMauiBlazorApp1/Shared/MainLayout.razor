@@ -3,23 +3,14 @@
 @inject IJSRuntime JSRuntime
 @inject NavigationManager NavManager;
 
+@Body
 
-    @if (Settings.UserBasicDetail != null)
-    {
-        <NavMenu />
-        @Body
-        <BottomMenu />
-        <Sidebar />
-    }
-    else
-    {
-        <main>
-            <article class="content px-4">
-                @Body
-            </article>
-        </main>
-    }
-
+@if (Settings.UserBasicDetail != null)
+{
+    <NavMenu />
+    <BottomMenu />
+    <Sidebar />
+}
 
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -29,7 +20,6 @@
             await JSRuntime.InvokeVoidAsync("eval", "loadSplide()");
 
             StateHasChanged();
-
         }
     }
 

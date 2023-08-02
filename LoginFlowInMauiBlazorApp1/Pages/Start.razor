@@ -1,0 +1,16 @@
+﻿@page "/"
+@inject NavigationManager NavManager;
+@inject IJSRuntime JSRuntime
+
+@code {
+    protected override Task OnInitializedAsync()
+    {
+        //Inicializa dados no localStorage
+        JSRuntime.InvokeVoidAsync("localStorage.setItem", "FinappDarkmode", Preferences.Get("darkmode", defaultValue: 0));
+
+        //O ForceLoad faz o recarregamento completo da página, ou seja, todos os scripts serão recarregados também
+        NavManager.NavigateTo("/app-Launch", forceLoad: true);
+
+        return base.OnInitializedAsync();
+    }
+}
